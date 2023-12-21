@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedéx</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="navigation-bar">
+            <div id="nav-container">
+                <div id="nav-logo"></div>
+                <ul id="nav-links">
+                    <li class="nav-link first-a">
+                        <a href="#">
+                            <p>Pokemons</p><span id="pokemons-counter"></span>
+                        </a>
+                    </li>
+                    <li class="nav-link second-a">
+                        <a href="#">Pokedex</a>
+                    </li>
+                    <li class="nav-link third-a"><a href="#">Compare</a></li>
+                </ul>
+                <div id="hamburger-icon"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="pokemon-container">
+            <!--Pokémons Dynamically Generated-->
+        </div>
+
+        <div id="pokedex-container" class="hide">
+            <!---->
+            <div class="buttons">
+                <div class="btn1">BACK</div>
+                <div class="btn2">NEXT</div>
+            </div>
+        </div>
+
+        <div id="pokeball-container" class="hide">
+            <!-- pokemon comparison -->
+            <label for="pokemon1">Enter the name or ID of Pokémon 1:</label>
+            <input type="text" id="pokemon1">
+            <label for="pokemon2">Enter the name or ID of Pokémon 2:</label>
+            <input type="text" id="pokemon2">
+            <button id="comparison-button">Compare Pokémon</button>
+
+            <div id="result">
+                <!-- Comparison result will be displayed here -->
+            </div>
+            <div class="pokemon-container">
+                <div class="pokemon-details" id="pokemonDetails1">
+                    <!-- Pokémon 1 details will be displayed here -->
+                </div>
+                <div class="pokemon-image" id="pokemonImage1">
+                    <!-- Pokémon 1 image will be displayed here -->
+                </div>
+            </div>
+            <div class="pokemon-container">
+                <div class="pokemon-details" id="pokemonDetails2">
+                    <!-- Pokémon 2 details will be displayed here -->
+                </div>
+                <div class="pokemon-image" id="pokemonImage2">
+                    <!-- Pokémon 2 image will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-authors">
+                <h3>Created By:</h3>
+                <div id="authors">
+                    <p>
+                        <a href="https://github.com/Khyati-96" id="vitor-link">Khyati Sethi </a>
+                    </p>
+                </div>
+            </div>
+            <div id="footer-api">
+                <h3 id="content-by">Content by:</h3>
+                <div id="api-logo"></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-container">
+        <div class="modal"></div>
+    </div>
+
+    <script defer="defer" src="runtime.bundle.js"></script>
+    <script defer="defer" src="index.bundle.js"></script>
+    <script defer="defer" src="index.js"></script>
+</body>
+
+</html>
